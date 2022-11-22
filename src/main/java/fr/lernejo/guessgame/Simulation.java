@@ -22,7 +22,7 @@ public class Simulation {
     private boolean nextRound() {
         long guess = player.askNextGuess();
         if (guess == numberToGuess) {
-            logger.log("Bien joué");
+            logger.log("Bravo");
             return true;
         } else {
             player.respond(guess > numberToGuess);
